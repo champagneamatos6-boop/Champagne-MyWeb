@@ -1,0 +1,259 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F9F6F3;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1100px; 
+  background: #F5C9B0;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255,0.03);
+}
+
+header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-bottom:26px;
+}
+
+.avatar {
+  width: 100px;          
+  height: 95px;     
+  Padding:20px; 
+  border-radius: 16px;   
+  background-color:#1C352D; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;          
+  font-weight: bold;
+  font-size: 60px;    
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title {
+  margin: 4px 0 0;
+  color: black;
+  font-size: 13px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center; 
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #e6eef8;
+  font-size: 13px;
+  background:#1C352D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; 
+}
+
+.card {
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.about h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.about-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   
+  object-fit: cover;    
+  display: block;
+  margin: 0 auto 15px;  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3)
+}
+
+#about {
+  margin-top: 100px;
+  background: #A6B28B;   
+  border-left: 6px;
+  min-height: 250px;
+  color:black;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  text-align:center;
+}
+
+#Skills {
+  background: #A6B28B;   
+  border-left: 6px;
+  height: 250px;
+  color: black;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+#Skills span {
+  background-color: #1C352D;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#projects {
+  background: #A6B28B;  
+  border-left: 6px;
+  height: 900px;
+  color:black;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.65);
+}
+#projects h2{
+  text-align: center;
+}
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;           
+}
+
+.projects-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin: 0; 
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+#contact {
+  background: #A6B28B;   
+  border-left: 6px;
+  height: auto;   
+  color:black;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
+}
+#contact{
+  font-weight: 900;
+}
+
+#contact h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+ 
+  #projects {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .title h1 {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  #Skills span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .project-name {
+    font-size: 16px;
+  }
+
+  .about-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .projects-pic {
+    max-width: 100%;
+  }
+  #projects {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
